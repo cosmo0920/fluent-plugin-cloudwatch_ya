@@ -1,7 +1,7 @@
 module Fluent
     require 'net/http'
     require 'jsonpath'
-    require 'aws-sdk'
+    require 'aws-sdk-v1'
     class CloudWatchYaOutput < TimeSlicedOutput
 
         METRIC_DATA_MAX_NUM = 20 
