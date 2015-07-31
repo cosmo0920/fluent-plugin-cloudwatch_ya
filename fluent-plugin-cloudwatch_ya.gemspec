@@ -15,5 +15,8 @@ Gem::Specification.new do |gem|
     "README.md",
     "lib/fluent/plugin/out_cloudwatch_ya.rb"
   ]
+  gem.add_dependency "fluentd", [">= 0.10.0", "< 2"]
+  gem.add_dependency "aws-sdk-v1", "~> 1.38"
+  gem.add_dependency "jsonpath", "~> 0.5.0"
 end
 
