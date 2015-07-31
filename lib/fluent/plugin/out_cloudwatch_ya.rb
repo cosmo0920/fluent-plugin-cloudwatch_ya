@@ -6,8 +6,8 @@ module Fluent
 
         METRIC_DATA_MAX_NUM = 20 
         Fluent::Plugin.register_output('cloudwatch_ya', self)
-        config_param :aws_key_id,                  :string, :default => nil
-        config_param :aws_sec_key,                 :string, :default => nil
+        config_param :aws_key_id,                  :string, :default => nil, :secret => true
+        config_param :aws_sec_key,                 :string, :default => nil, :secret => true
         config_param :cloud_watch_endpoint,        :string, :default => 'monitoring.ap-northeast-1.amazonaws.com'
         config_param :namespace,                   :string
 
